@@ -1,0 +1,38 @@
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: ;
+    background-color: aquamarine;
+    color: white;
+}
+
+header h1 {
+    color: var(--tertiiary);
+    background-color: green;/*var(--secondary);*/
+    padding: 5px 1% 5px 1%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: ;
+}
+
+li {
+    background-color: aquamarine;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: red; /*var(--secondary);*/
+    margin-right: 10px;
+    background-color: orange;
+}
