@@ -57,6 +57,10 @@ nav a {
     transition: all 0.25s ease-in;*/
     font-size: 1.4rem;
 }
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+}
 
 main {
     margin-top: 20px;
@@ -65,7 +69,7 @@ main {
 
 .hero-banner {
     background: blue;
-    background-image: url("https://images.unsplash.com/photo-1617043007276-a2fd9d9626fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-image: url("../https://assets.rocketstock.com/uploads/2016/11/Star-Wars-Warp-Thumbnail-Image-1000x576.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -74,8 +78,9 @@ main {
     padding: 2% 6%;
     display: flex;
     justify-content: flex-end;
-    text-align: right;
+    text-align: right; 
 }
+
 .hero-banner div {
     flex: 0 0 90%;
 }
@@ -120,6 +125,26 @@ main {
 .page-section p {
     margin-bottom: 20px;
 }
-li {
-    background-color: aquamarine;
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
