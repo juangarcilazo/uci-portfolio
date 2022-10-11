@@ -62,11 +62,18 @@ nav a {
     color: var(--secondary);
     margin-right: 10px;
     background-color: rgb(236, 31, 31);
+    transition: all 0.25s ease-in;
     font-size: 1.4rem;
-}
+} 
+
 nav a:hover {
     background-size: 100% 100%;
-    color: var(--primary);
+    color: purple;
+    text-decoration: none;
+background-blend-mode: soft-light;
+background-size: 150%;
+transition: all 0.5s;
+font-size: 0.9rem;
 }
 
 main {
@@ -189,6 +196,16 @@ main {
   .contact address a:hover {
     background-size: 100% 88%;
     color: greenyellow;
+  }
+
+  #contact {
+    background-color: yellow;
+    font-size: 20px;
+    margin:100px; 
+    padding: 10px;
+    display: inline-flex;
+    
+
   }
   @media screen and (max-width: 980px) {
     header {
