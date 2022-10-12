@@ -13,7 +13,7 @@ body {
     margin:0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--primary);
+    color: var(--primary); 
     background-color: rgb(75, 196, 227); /*var(--light);*/
     line-height: 1.5;
 }
@@ -41,15 +41,11 @@ header h1 {
 h2 {
     color: white;
 }
-/*h2 {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    color: white;
-} */
+
+h2 {
+  align-items: center;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -146,7 +142,7 @@ main {
 }
 
 .flex-item {
-    border: 5px solid var(--secondary);
+    border: 1px solid black;
     background-color: var(--primary);
     color: var(--tertiary);
     min-height: 150px;
@@ -162,6 +158,12 @@ main {
     transition: all 0.5s;
     font-size: 0.9rem;
   }
+  .flex-item div {
+    background-color: rgb(75, 196, 227)
+    /* add more creative things here*/
+    ;
+  }
+
   .flex-item:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -171,27 +173,34 @@ main {
  
   .placeholder1 {
     background-color: aquamarine;
-    /*background-image: url("../images/02-portfolio-1.jpg");*/
+    background-image: url("https://images.unsplash.com/photo-1634704784915-aacf363b021f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: contain;
   }
 
   .placeholder2 {
     background-color: aquamarine;
-    /*background-image: url("../images/02-portfolio-1.jpg");*/
+    background-image: url("https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80");
+  background-size: cover;
   }
 
   .placeholder3 {
     background-color: aquamarine;
-    /*background-image: url("../images/02-portfolio-1.jpg");*/
+    background-image: url("https://images.unsplash.com/photo-1657383499568-fd51a2161f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+    background-size: cover;
+    background-position: center -180px;
   }
 
   .placeholder4 {
     background-color: aquamarine;
-    /*background-image: url("../images/02-portfolio-1.jpg");*/
+    background-image: url("https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80");
+    background-position: bottom;
+    background-size: cover;
   }
 
   .placeholder5 {
     background-color: aquamarine; 
-    /*background-image: url("../images/02-portfolio-1.jpg");*/
+    background-image: url("https://images.unsplash.com/photo-1597634285596-01fd1bffe116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    background-size:contain;
   }
   .contact address a:hover {
     background-size: 100% 88%;
@@ -204,9 +213,14 @@ main {
     margin:100px; 
     padding: 10px;
     display: inline-flex;
-    
-
   }
+
+.contact address {
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
   @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
