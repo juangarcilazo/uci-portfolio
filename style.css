@@ -7,17 +7,9 @@
     --tertiary: green;
     --dark: navy;
     --light: white;
-} */
+}  --will try to use this for my next update-- */
 
-body {
-    margin:0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--primary); 
-    background-color: rgb(75, 196, 227); /*var(--light);*/
-    line-height: 1.5;
-}
-
+/* -- this space is for the Name the portfolio whom is presenting the work-- */
 header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -25,27 +17,24 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(0, 0, 0); /*var(--tertiary);*/
+    background-color: rgb(0, 0, 0); /*var(--);*/
     box-shadow: 0 50px 35px rgb(0, 255, 94);
 }
 
 header h1 {
-    color: blue;/*var(--tertiiary);*/
-    background-color: /*var(--secondary);*/
-    padding: 5px 1% 5px 1%;
+    color: blue;/*var(--);*/
+    background-color: /*var(--);*/
+    padding: 5px 1px 5px 1px;
     margin: 0;
     font-size: 4vw;
     line-height: 1;
 }
 
 h2 {
-    color: white;
-}
-
-h2 {
+  color: white;
   align-items: center;
 }
-
+/* --this space will be used for the Nav bar at the top- */
 nav {
     display: flex;
     flex-direction: row;
@@ -55,36 +44,31 @@ nav {
 nav a {
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--secondary);
+    color: black;/*var(--);*/
     margin-right: 10px;
-    background-color: rgb(236, 31, 31);
+    background-color: rgb(236, 31, 31);/*var(--);*/
     transition: all 0.25s ease-in;
     font-size: 1.4rem;
 } 
 
 nav a:hover {
     background-size: 100% 100%;
-    color: purple;
+    color: purple;/*var(--);*/
     text-decoration: none;
-background-blend-mode: soft-light;
-background-size: 150%;
-transition: all 0.5s;
-font-size: 0.9rem;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
 }
 
-main {
-    margin-top: 20px;
-    margin-bottom: 45px;
-}
-
+/* ----this space is for the image divider---- */ 
 .hero-banner {
-    color: white;
+    color: white;/*var(--);*/
     background-image: url("https://assets.rocketstock.com/uploads/2016/11/Star-Wars-Warp-Thumbnail-Image-1000x576.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
     min-height: 30vh;
-    color: var(--light);
     padding: 2% 6%;
     display: flex;
     justify-content: flex-end;
@@ -96,13 +80,27 @@ main {
 }
 
 .hero-banner h2 {
-    color: white;/*var(--tertiary);*/
+    color: white;/*var(--);*/
     margin: 75px;
     font-size: 2.3rem;
     line-height: 1.2;
     display: inline;
-    background-color: black;
+    background-color: black;/*var(--);*/
 }
+/* --this space will be used for the Page-sections-- */
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(75, 196, 227); /*var(--light);*/
+  line-height: 1.5;
+}
+
 .page-wrapper {
     max-width: 88%;
     margin-left: auto;
@@ -122,7 +120,7 @@ main {
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
-    border-right: 4px solid var(--primary);
+    border-right: 4px solid;
     font-size: 4vw;
     line-height: 1.1;
   }
@@ -135,6 +133,7 @@ main {
     margin-bottom: 20px;
 }
 
+/* ----his space is used for the Flex---- */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -142,9 +141,8 @@ main {
 }
 
 .flex-item {
-    border: 1px solid black;
-    background-color: var(--primary);
-    color: var(--tertiary);
+    border: 2px solid black;/*var(--);*/
+    color: black;/*var(--);*/
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -159,160 +157,166 @@ main {
     font-size: 0.9rem;
   }
   .flex-item div {
-    background-color: rgb(75, 196, 227)
-    /* add more creative things here*/
+    background-color: rgb(75, 196, 227)/*var(--);*/
+    /* add more creative things here like glow */
     ;
   }
 
   .flex-item:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);/*var(--);*/
   }
   .flex-item h3 {
     font-size: 1.6rem;
   }
  
-#contact div img {
-    border: 1px solid;
-    border-radius: 50%;
-    display:flex;
-    justify-content: space-around;
-    max-width:100px;
-    height:auto;
-    object-fit:scale-down;
-  }
-
+/* --this space is for the image placeholders for each project-- */
   .placeholder1 {
-    background-color: aquamarine;
+    background-color: aquamarine;/*var(--);*/
     background-image: url("https://images.unsplash.com/photo-1634704784915-aacf363b021f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
     background-size: contain;
-  }
+}
 
   .placeholder2 {
-    background-color: aquamarine;
+    background-color: aquamarine;/*var(--);*/
     background-image: url("https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80");
   background-size: cover;
-  }
+}
 
   .placeholder3 {
-    background-color: aquamarine;
+    background-color: aquamarine;/*var(--);*/
     background-image: url("https://images.unsplash.com/photo-1657383499568-fd51a2161f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
     background-size: cover;
     background-position: center -180px;
     background-attachment: scroll;
-  }
+}
 
   .placeholder4 {
-    background-color: aquamarine;
+    background-color: aquamarine;/*var(--);*/
     background-image: url("https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80");
     background-position: bottom;
     background-size: cover;
-  }
+}
 
   .placeholder5 {
-    background-color: aquamarine; 
+    background-color: aquamarine; /*var(--);*/
     background-image: url("https://images.unsplash.com/photo-1597634285596-01fd1bffe116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
     background-size: cover;
     background-position: center -180px;
     background-attachment: scroll;
-  }
-  .contact address a:hover {
-    background-size: 100% 88%;
-    color: greenyellow;
-  }
-
-  #contact {
-    background-color: rgb(110, 25, 25);
-    font-size: 20px;
-    margin:100px; 
-    padding: 10px;
-    display: inline-flex;
-  }
-
-.contact address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
-  @media screen and (max-width: 980px) {
-    header {
-      padding: 0 0 10px 0;
-      justify-content: center;
-      text-align: center;
-    }
-    header h1 {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-        font-size: 10vw;
-      }
-    
-      header nav {
-        justify-content: center;
-      }
-  
-      .page-section > div {
-        flex: 0 0 100%;
-      }
-    
-      .page-section > h2 {
-        border-right: none;
-        border-bottom: 4px solid var(--primary);
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        text-align: left;
-        font-size: 7vw;
-      }
-    }
+  /* --this space is for the contact nav bar, 'section', 'avatar', 'contact info'-- */
+  #contact address {
+    display: flex;
+    margin-left: 150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
-    @media screen and (max-width: 768px) {
-      header {
-        padding: 0 0 10px 0;
-        justify-content: center;
-        text-align: center;
-      }
-      header h1 {
-          width: 100%;
-          padding: 5px;
-          margin-bottom: 10px;
-          font-size: 10vw;
-        }
-      
-        header nav {
-          justify-content: center;
-        }
-    
-        .page-section > div {
-          flex: 0 0 100%;
-        }
-      
-        .page-section > h2 {
-          border-right: none;
-          border-bottom: 4px solid var(--primary);
-          margin-bottom: 20px;
-          padding-bottom: 10px;
-          text-align: left;
-          font-size: 7vw;
-        }
-      }
-  
-      /*.flex-item {
-        }
-        .flex-item:first-child {
-          flex-basis: 100%;
-        }
-      
-        .flex-item:first-child {
-          min-height: 150px;
-        }
-      
-        .hero-banner {
-          justify-content: center;
-          text-align: center;
-        }
-      
-        .contact address {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-      } */
+ #contact div img {
+    margin-left: 375px;
+    border: 1px solid;
+    border-radius: 50%;
+    display:flex;
+    justify-content: space-around;
+    max-width: 200px;
+    height:auto;
+    object-fit:scale-down;
+}
+
+  #contact address a:hover {
+    background-size: 100% 88%;
+    color: rgb(47, 182, 255);
+}
+
+ /* #contact {
+    background-color: rgb(110, 25, 25);var(--);
+    border: 4px solid black;var(--);
+    font-size: 20px;
+    margin: 2px; 
+    padding: 10px;
+    padding-bottom: 50px; 
+    display:flex;
+    margin-bottom: 2px;
+} */
+#contact h2 {
+  font-size: 60px;
+  margin-left: 300px;
+}
+/* --this space is for the image sizing formatted in the same style as the above css-- */
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
+  }
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+  #contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flex-item:first-child {
+    flex-basis: 100%;
+    min-height: 150px;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+#contact h2 {
+  margin-inline-end: 250px;
+  margin-inline-start: 250px;
+  font-size: 30px;
+}
+  #contact div img {
+margin-right: 30px;
+margin-left: 250px;
+
+  }
+}
